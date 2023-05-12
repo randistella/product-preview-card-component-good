@@ -1,0 +1,43 @@
+$dk-cyan:hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$dk-blue:hsl(212, 21%, 14%);
+$dk-gray-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+@import 'responsive.scss';
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+  .flex-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: $cream;
+      height: 100vh;
+
+    .box {
+        background: $white;
+        border-radius: 10px;
+        max-width: 600px;
+        height: auto;
+        display: flex;
+        overflow: hidden;
+
+        .box-left {
+            background: url(/dist/images/image-product-desktop.jpg) no-repeat center center/cover;
+            color:blue;
+            height:420px;
+            width: 300px;
+        }
+
+        .box-right {
+            height:420px;
+            width: 300px;
+        }
+    }
+}
