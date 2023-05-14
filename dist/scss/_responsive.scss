@@ -1,18 +1,28 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 376px) {
+.box-left {
+    background: url(/dist/images/image-product-desktop.jpg) no-repeat center center/cover;
+    }
+}
 
-body {
-    .flex-container {
-        display: flex;
-        flex-direction: column;
+@media only screen and (max-width: 375px) {
 
-            .box-left {
-                width: 250px;
-            }
+.flex-container {
+    flex-direction: column;
+    overflow: hidden;
+    padding:30px;
 
-            .box-right {
-                width: 250px;
-                background-color: red;
-            }
+    // .box-left, .box-right {
+    //     max-height: 300px;
+    // }
+
+    .box-left {
+        background: url(/dist/images/image-product-mobile.jpg) no-repeat center center/cover;
+        max-height: 200px;
+    
+        }
+
+    .box-right {
+        color: blue;
         }
     }
 }

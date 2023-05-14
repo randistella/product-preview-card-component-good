@@ -11,29 +11,26 @@ $white: hsl(0, 0%, 100%);
     padding:0;
     box-sizing: border-box;
 }
-body {
-    background-color: $cream;
 
-  .flex-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        background: $white;
-        border-radius: 10px;
-        max-width: 600px;
-        overflow: hidden;
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    margin: 0;
+    background: $cream;
+    overflow: hidden;
 
+    .box-left, .box-right {
+        height:420px;
+        width: 300px;
+        }
+        
     .box-left {
-        background: url(/dist/images/image-product-desktop.jpg) no-repeat center center/cover;
-        height:420px;
-        width: 300px;
+    
     }
-
     .box-right {
-        height:420px;
-        width: 300px;
-    }
-}
-
-}
+        background-color: $white;
+        }
+        }
+    
