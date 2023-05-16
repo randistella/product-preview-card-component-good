@@ -5,6 +5,10 @@ $dk-gray-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
 
 @import 'responsive.scss';
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:ital,wght@0,700;1,500&display=swap');
+
+// font-family: 'Fraunces', serif;
+// font-family: 'Montserrat', sans-serif;
 
 * {
     margin:0;
@@ -29,8 +33,56 @@ $white: hsl(0, 0%, 100%);
     .box-left {
     
     }
+
     .box-right {
         background-color: $white;
+        padding:30px;
+
+        h6, p, button {
+            font-family:'Montserrat', sans-serif;
         }
+
+        h1, .sale {
+            font-family: 'Fraunces', serif;
         }
+
+        h6 {
+            color:$dk-gray-blue;
+            letter-spacing: 4px;
+            font-size: 12px;
+        }
+
+        h1 {
+            font-size: 30px;
+            line-height: 1;
+        }
+
+        .text {
+            color:$dk-gray-blue;
+            line-height: 1.4;
+            font-size: 12px;
+        }
+
+        .sale {
+            color:$dk-cyan;
+            font-size: 30px;
+        }
+
+        .regular {
+            color:$dk-gray-blue;
+            font-size: 12px;
+            text-decoration: line-through;
+        }
+        
+        .btn {
+            border-radius: 5px;
+            border:none;
+            font-size: 12px;
+            color: $white;
+            background-color: $dk-cyan;
+            padding: 10px 30px;
+            width:100%;
+        } 
+    }
+    }
     
