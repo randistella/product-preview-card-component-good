@@ -25,8 +25,9 @@ $white: hsl(0, 0%, 100%);
     background: $cream;
     overflow: hidden;
 
+
     .box-left, .box-right {
-        height:420px;
+        height:400px;
         width: 300px;
         }
         
@@ -40,10 +41,12 @@ $white: hsl(0, 0%, 100%);
 
         h6, p, button {
             font-family:'Montserrat', sans-serif;
+            margin-bottom: 20px;
         }
 
         h1, .sale {
             font-family: 'Fraunces', serif;
+            margin-bottom: 20px;
         }
 
         h6 {
@@ -72,6 +75,7 @@ $white: hsl(0, 0%, 100%);
             color:$dk-gray-blue;
             font-size: 12px;
             text-decoration: line-through;
+            margin-left: 20px;
         }
         
         .btn {
@@ -82,7 +86,22 @@ $white: hsl(0, 0%, 100%);
             background-color: $dk-cyan;
             padding: 10px 30px;
             width:100%;
+            cursor: pointer;
         } 
+
+        .btn:hover {
+            background-color: lighten($dk-cyan, 10%);
+            transform: scale(.98);
+        }
+
+        .prices {
+            display: flex;
+            align-items: center;
+        }
+
+        i {
+            margin-right: 10px;
+        }
     }
     }
     
